@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../static/styles.css">
+</head>
+<body>
+    <header>    
+        <h2>📃แอพพลิเคชั่น บัญชีรายรับรายจ่าย</h2>
+    </header>
+    <main>
+        <section class="form">
+            <!-- edit form -->
+            {% if expense %}
+            <form method="" action="">
+                <label for="title">รายการ:</label>
+                <input type="text" name="title" id="title" value="" required>
+                <label for="amout">จำนวน:</label>
+                <input type="number" name="amout" id="amout" value="" required>
+                <input type="hidden" name="amout" id="amout" value="{{expense['id']}}" required>
+                <button type="submit">Submit</button>
+            </form>
+            <!-- add form -->
+            {% else %}
+            <form method="" action="">
+                <label for="title">รายการ:</label>
+                <input type="text" name="title" id="title" required>
+                <label for="amout">จำนวน:</label>
+                <input type="number" name="amout" id="amout" required>
+                <button type="submit">Submit</button>
+            </form>
+            {% endif %}
+        </section>
+        <section class="list">
+            <h2 style="padding: 0.5rem 1rem;">บัญชีรายรับรายจ่าย</h2>
+            <ul>
+                {% for ..... in ..... %}
+                <!-- loop pexense -->
+                <li>
+                    <div>
+                        <h3>{{title}}</h3>
+                    </div>
+                    <div>{{amout}}</div>
+                    <div>
+                        <!-- ไปดูของเดิมมั่ง -->
+                        <button>edit</button>
+                        <button>delete</button>
+                    </div>
+                </li>
+                {% endfor %}
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Mr.Wisanu Phonchariyatham Chonradsadornumrung School.</p>
+    </footer>
+</body>
+</html>
