@@ -17,8 +17,7 @@
    - update 2 คะแนน
    - delete 2 คะแนน
    - connect database 2 คะแนน
-4. คำนวณเกรดและจัดการ code ในส่วนของ jinja HTML template ได้ถูกต้อง 5 คะแนน
-####  <span style="color:red;"> รวม 20 คะแนน </span>
+####  <span style="color:red;"> รวม 15 คะแนน </span>
 
 #### <span style="color:red;"> หากเกิดปัญหาเกี่ยวกับ โปรแกรม python ให้เรียกครู เพื่อช่วยแก้ไข </span>
 #### <span style="color:red;"> สามารถเปิดเว็บไซต์ ใช้ gen AI ช่วยได้ </span>
