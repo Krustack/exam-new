@@ -1,5 +1,3 @@
-""" ให้ขนาดนี้แล้วหวังว่าจะทำได้นะจ๊ะ """
-
 import os
 from flask import Flask, render_template, request, redirect
 from supabase import create_client, Client
@@ -31,21 +29,21 @@ def index():
 
 """ ลิงค์ ไปใช้ request เพิ่ม ข้อมูล """
 @app.route('/add-expense', methods=['POST'])
-def add_student():
+def add_expense():
     # ตัวแปรเก็บค่า = request.form['name ของ input']
     # supabase.table(ชื่อtable).insert({ข้อมูล}).execute()
     return redirect('/')
 
 """ ลิงค์ ไปใช้ request ลบ ข้อมูล """
 @app.route('/del-expense', methods=['POST'])
-def del_student():
+def del_expense():
         # id = request.form['id']
         # response = supabase.table(ชื่อtable).delete().eq('id', id).execute()
     return redirect('/')
 
 """ ลิงค์ ไปใช้ request แก้ไข ข้อมูล """
 @app.route('/update-expense', methods=['POST'])
-def update_student():
+def update_expense():
     # ตัวแปรเก็บค่า = request.form['name ของ input']
     # response = (supabase.table(ชื่อtable).update({ข้อมูล}).eq('id', id).execute())
     return redirect('/')
